@@ -1,10 +1,8 @@
 http = require 'http'
 url = require 'url'
 querystring = require 'querystring'
-mongoClient = require('mongodb').MongoClient
 
 port = process.env.PORT or 8080
-process.env.MAIN_DB ?= 'mongodb://where:BjCJPkHpx8yp3nanzjNmot@dharma.mongohq.com:10012/where'
 
 headers =
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0'
